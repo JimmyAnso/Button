@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding:50px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 30);
+}
+.container>div{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:2px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 1 */
+#btn1{
+}
+/* .btn1::after{
+    content:"";
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(30deg);
+    z-index: -1 ;
+
+} */
+#btn1:hover{
+    animation: b1 1s ease-in-out 0s;
+}
+@keyframes b1{
+    from{
+        background:linear-gradient(45deg,transparent 100%,orange 50%,orange 50%,transparent 100%);
+    }
+    30%{
+        background:linear-gradient(45deg,transparent 30%,orange 30%,orange 60%,transparent 30%);
+    }
+    50%{
+        background:linear-gradient(45deg,transparent 15%,orange 15%,orange 85%,transparent 15%);
+    }
+    to{
+        background:linear-gradient(45deg,transparent 0%,orange 0%,orange 100%,transparent 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 2 */
+#btn2{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#btn2::after{
+    content:"";
+    height: 0%;
+    width: 100%;
+    background-color: orange;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(30deg);
+    z-index: -1 ;
+
+    transition:1s;
+}
+#btn2:hover::after{
+    height: 500%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 3 */
+#btn3{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:2px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#btn3::after{
+    content:"";
+    height: 0%;
+    width: 100%;
+    background-color: orange;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(30deg);
+    z-index: -1 ;
+
+    transition:height .5s .5s ease-in,
+                transform 1s 0s ease-in;
+}
+#btn3:hover::after{
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 4 */
+#btn4{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:2px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#btn4::after{
+    content:"";
+    height: 0%;
+    width: 100%;
+    background-color:rgba(255, 165, 0,.5);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(30deg);
+    z-index: -1 ;
+
+    transition:height .5s .5s ease-in,
+                transform 1s 0s ease-in;
+    box-shadow: 0 0 20px  orange;
+}
+#btn4::before{
+    content:"";
+    height: 0%;
+    width: 100%;
+    background-color: rgb(255, 0, 212);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(-30deg);
+    z-index: -1 ;
+
+    transition:height .5s .5s ease-in,
+                transform 1s 0s ease-in;
+
+    box-shadow: 0 0 20px rgb(255, 0, 212);
+}
+#btn4:hover::after,#btn4:hover::before{
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 5 */
+#btn5{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:2px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#btn5::after,#btn5::before{
+    content:"";
+    height: 0%;
+    width: 100%;
+    background-color:rgba(255, 165, 0,1);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transform: rotate(30deg);
+    z-index: -1 ;
+
+    transition:height .5s .5s ease-in,
+                transform .5s 0s ease-in;
+    box-shadow: 0 0 20px  orange;
+}
+#btn5::before{
+    background-color: rgb(255, 0, 212);
+    transform: rotate(-30deg);
+    box-shadow: 0 0 20px rgb(255, 0, 212);
+}
+#btn5:hover::after,#btn5:hover::before{
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button 6 */
+#btn6{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:3px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition:.5s;
+}
+#btn6::before{
+    content:"";
+    width: 204px;
+    height: 54px;
+    position: absolute;
+    top:0;
+    left:-2px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 0px solid red;
+    transition: .5s ease-in-out;
+}
+#btn6:hover::before{
+    border: 10px solid red;
+    left:-12px;
+    height: 24px;
+}
+#btn6::after{
+    content:"";
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top:0;
+    left:-2px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 0px solid red;
+    transition: .5s ease-in-out;
+}
+#btn6:hover::after{
+    border:10px solid red;
+    left:1px;
+    width: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button7 */
+/* 注意層與層之間的關係 */
+#btn7{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:3px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition:.5s;
+}
+#btn7::before{
+    content:"";
+    width: 194px;
+    height: 0px;
+    position: absolute;
+    top:0;
+    left:-3px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 7px solid rgb(0, 0, 30);
+    transition: .5s ;
+}
+#btn7:hover::before{
+    /* background-color: red; */
+    height: 20px;
+}
+#btn7::after{
+    content:"";
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 7px solid rgb(0, 0, 30);
+    transition: .5s ;
+}
+#btn7:hover::after{
+    /* background-color: red; */
+    width: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button8 */
+/* 注意層與層之間的關係 */
+#btn8{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    position:relative;
+    border:3px solid orange;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+    outline:none;
+    cursor: pointer;
+    position:relative;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition:.5s;
+}
+#btn8::before{
+    content:"";
+    width: 194px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    left:-3px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 6px solid rgb(0, 0, 30);
+    transition: .5s ;
+
+    /* 測試 */
+    /* background-color: orange; */
+}
+#btn8:hover::before{
+
+    height: 0px;
+}
+#btn8::after{
+    content:"";
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: -1;
+    border: 6px solid rgb(0, 0, 30);
+    transition: .5s ;
+    /* 測試 */
+    /* background-color: red; */
+}
+#btn8:hover::after{
+
+    width: 0px;
+}
